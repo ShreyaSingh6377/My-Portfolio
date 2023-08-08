@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreya - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+     body{
+         background-color:black;
+         color: white;
+         font-family: 'Poppins', sans-serif;
+     }
+     header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+       margin-bottom:20px;
+    }
+     nav{
+        display:flex;
+        justify-content: space-around;
+        align-items: center; 
+        padding: 30px;   
+        background-color:rgb(28, 77, 77);
+     }
+     nav  ul{
+        display: flex;
+        justify-content: center;
+     }
+     nav ul li{
+        list-style: none;
+        margin: 0 23px;
+     }
+     nav ul li a{
+        text-decoration: none;
+        color:white
+     }
+     nav ul li a:hover{
+        text-decoration: none;
+        color:lavender;
+        font-size: 1.2rem;
+     }
+     main hr{
+        border:0;
+        background:lavenderblush;
+        height: 1.2px;
+        margin:40px 84px;
+     }
+     .left{
+        font-size: 1.5rem;
+     }
+     .firstSection {
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        margin:60px 0;
+     }
+     .firstSection >div{
+        width:40%;
+     }
+     .leftSection{
+        font-size: 3rem;
+        padding:100px;
+     }
+     .rightSection{
+        max-width: 80vw;
+        margin:auto;
+        padding:20px;
+        margin:auto;
+        margin-bottom:120px;
+     }
+     .leftSection .btn{
+        padding:30px;
+     }
+     .purple{
+color: blueviolet;
+     }
+     .text-gray{
+        color:grey;
+     }
+     #element{
+        color:purple;
+     }
+     
+     .secondSection{
+        padding:20px;
+        font-size:1.5rem;
+        max-width: 80vw;
+        margin:auto;
+        margin-bottom:120px;
+     }
+     .secondSection h1{
+        font-size:3rem;
+     }
+     .thirdSection{
+        max-width: 80vw;
+        margin:auto;
+        padding:20px;
+        font-size:1.5rem;
+        max-width: 80vw;
+        margin:auto;
+        margin-bottom:120px;
+     }
+     .fourthSection h1{
+        font-size:3rem;
+     }
+     .fourthSection{
+        max-width: 80vw;
+        margin:auto;
+        padding:20px;
+        font-size:1.5rem;
+        max-width: 80vw;
+        margin:auto;
+        margin-bottom:120px;
+     }
+     .thirdSection h1{
+        font-size:3rem;
+     }
+     footer{
+        background-color:rgb(20, 66, 66);
+        height: 190px;
+     }
+     .footer{
+        display:flex;
+        padding: 23px 22px;
+        justify-content:space-evenly;
+     }
+     .footer ul{
+        list-style:none;
+     }
+     .footer >div{
+        width:123px;
+     }
+     #mypic{
+        border-radius: 100px;
+        border-width: 20px;
+        background: purple;
+        padding: 20px;
+        margin-left:200px;
+        margin-right:200px;
+        width: 200px;
+        height: 150px;
+     }
+     #about{
+        padding-bottom:90px;
+     }
+     #project{
+        padding-bottom:90px;
+     }
+     #contact{
+        padding-bottom:90px;
+     }
+     .space{
+        margin-bottom:50px;
+     }
+     #form{
+        flex: basis 60%;
+     }
+     .resbtn{
+        display:inline-block;
+        background:rgb(157, 54, 183);
+        text-decoration: none;
+        padding:15px;
+        color:lavender;
+        border-radius:6px;
+     }
+     .subbtn{
+      display:inline-block;
+        background:rgb(157, 54, 183);
+        color:lavender;
+        padding:20px 40px 20px 40px;
+        border-radius:6px;
+        cursor: pointer;  
+        font-size:medium;       
+     }
+     #resume{
+        margin-bottom:20px;
+     }
+     form{
+        width:100%;
+     }
+     form input,form textarea{
+        width:100%;
+        outline:none;
+        background:dull rgba(225, 213, 213, 0.986)smoke;
+        padding:15px;
+        margin:15px 0;
+        color:purple;
+        font-size:18px;
+        border-radius:6px;
+     }
+     @media(max-width:600px){
+      .firstSection{
+         display:flex;
+         flex-direction:column-reverse;
+         padding:0px;
+         margin:0px;
+         justify-content:space-around;
+      }
+      .rightSection{
+         margin-top:200px;
+         margin-bottom:70px;
+         margin-left:30px;
+      }
+     }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Shreya's Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection" id="home">
+            
+            <div class="leftSection">
+                Hi ! My name is <span class="purple">Shreya,</span>
+            <div>I am an undergraduate student upskilling in</div>
+            
+            <span id="element"></span> 
+            <div class="buttons">
+            
+                <a href="https://github.com/ShreyaSingh6377"><img src="github-mark-white.png" alt="github logo" width="50" height="60"></a>
+                <a href="https://www.linkedin.com/in/shreya-singh-raghuvanshi-543465218"><img src="linked.png" alt="linkedin logo" width="50" height="60"></a>
+                <a href="https://www.instagram.com/shreya7gustd/"><img src="insta.png" alt="instagram logo" width="50" height="60"></a>
+            </div>  
+        </div>   
+        <div class="rightSection">
+            <img id="mypic" src="mine.png" alt ="My Photograph" >
+        </div>  
+        </section>
+         
+        <div id="about"></div>
+        <section class="secondSection" >
+            
+            <!--<span class="text-gray">What I have done so far</span>-->
+            <div >
+                <h1 >About</h1>
+                Hello! I am Shreya Singh Raghuvanshi , an aspiring Software Engineer.<br>I have a deep love for Computer Science, and I am dedicated to creating innovative ,impactful projects through various available technologies.<br>Currently, I am pursuing my bachelor's degree from Graphic Era Deemed To Be University,a pivotal chapter in my educational journey.<br>
+                In my free time, you can find me playing badminton, cooking and watching documentaries.<br>
+                I am a resident of Dehradun ,charming capital city of Uttarakhand.<br>
+                Thank you!! For stopping by my portfolio.I hope you enjoy exploring my work as much as I enjoy creating it.
+            </div>
+        </section>
+        <div id="project"></div>
+        <section class="thirdSection">
+            <div >
+                <h1>Projects </h1>
+                <div>
+                    <h3>Academic Performance Prediction</h2>
+                        <div>This is a project coded in Pythton language.</div>
+                        <div>Click here to get a brief understanding of the project.<a href="acad.pdf"  > Overview</a></div>
+
+                        <div>Click here to see the code 
+                            <a href="https://www.kaggle.com/code/shreyasingh221003/academic-performance-prediction-df">Kaggle Link</a></div>
+
+                </div>
+                <div class="space"></div>
+                <div>
+                    <h3>Clone of E-commerce Website</h2>
+                        <div>Its a clone made from HTML and CSS.</div>
+
+                        <div>Click here to check the webpage
+                            <a href="https://shreyasingh6377.github.io/Myntra_Clone/">Look and feel of the site</a></div>
+                         
+                        <div>Click here to see all the files used<a href="https://github.com/ShreyaSingh6377/Myntra_Clone">Files Used</a></div>    
+
+                </div>
+                <div class="space"></div>
+                <div>
+                    <h3>Gender and Age Prediction</h2>
+                        <div>This project is based on classification and regression.</div>
+
+                        <div>Click here to get a brief understanding of the project
+                            <a href="gen_age.pdf">Overview</a></div>
+                         
+                        <div>Click here to see the code<a href="https://www.kaggle.com/code/shreyasingh221003/gender-age-prediction">Kaggle Link</a></div>    
+
+                </div>
+            </div>
+        </section>
+        <div id="contact"></div>
+        <section class="fourthSection">
+            <div>
+                <h1>Contact Me</h1>
+                <div id="resume"><a href="shreya_resume.pdf" class="resbtn">Download Resume</a></div>
+                <div class="form">
+                    <form action="https://formsubmit.co/579996d97e4d7e2ef19f077f2be583be" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your email" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <!--<input type ="hidden" name="_captcha" value="false">-->
+                        <input type="hidden" name="_template" value="table">
+                        <button type="Submit" class="subbtn ">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+   <!-- <footer>
+        <div class="footer">
+            <div class="ffirst">
+                <h3>Shreya's Developer Portfolio</h3>
+            </div>
+            <div class="fsecond">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="fthird">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="ffourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+    </footer>-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Development', 'Data Analysis','Machine Learning','Artificial Intelligence'],
+          typeSpeed: 50,
+        });
+      </script>
+      
+      
+</body>
+</html>
